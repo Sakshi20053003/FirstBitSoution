@@ -2,13 +2,21 @@
 void main()
 {
 	int no=424;
+	int temp=no,rev,rem;
 
-   if(no%10==no/100)
+   while(no<0)
     {
-      printf("num is palindrome");	
+      rem=no%10;
+	  rev=rev*10+rem;
+	  no=no/10;	
     }
-    else
+    if(rev==temp)
     {
-    	printf("num is not palindrome");
+    	printf("num is  palindrome");
     }
+	else
+	{
+		printf("num is not palindrome");
+	}
 }
+
